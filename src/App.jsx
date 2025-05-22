@@ -18,7 +18,10 @@ import ElectricalEngineer from "./ElectricalEngineer";
 import QCInspector from "./QCInspector";
 import ProjectSuperintendent from "./ProjectSuperintendent";
 import SafetyEngineers from "./SafetyEngineers";
-import AutoCADOperator from "./AutoCADOperator";
+
+// ✅ Corrected the import path:
+import AutoCADOperator from "./AutoCADOperator"; // If it's inside 'components'
+
 import Accountant from "./Accountant";
 import ComputerOperator from "./ComputerOperator";
 import ProjectControllers from "./ProjectControllers";
@@ -34,7 +37,7 @@ import Profile from "./Profile";
 
 function App() {
   return (
-    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router>
       <div className="App">
         <Navbar />
         <motion.div
