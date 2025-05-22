@@ -19,8 +19,7 @@ import QCInspector from "./QCInspector";
 import ProjectSuperintendent from "./ProjectSuperintendent";
 import SafetyEngineers from "./SafetyEngineers";
 
-// ✅ Corrected the import path:
-import AutoCADOperator from "./AutoCADOperator"; // If it's inside 'components'
+
 
 import Accountant from "./Accountant";
 import ComputerOperator from "./ComputerOperator";
@@ -71,7 +70,7 @@ function App() {
             <Route path="/services/qc-inspector" element={<QCInspector />} />
             <Route path="/services/project-superintendent" element={<ProjectSuperintendent />} />
             <Route path="/services/safety-engineers" element={<SafetyEngineers />} />
-            <Route path="/services/auto-cad-operator" element={<AutoCADOperator />} />
+         
             <Route path="/services/accountant" element={<Accountant />} />
             <Route path="/services/computer-operator" element={<ComputerOperator />} />
             <Route path="/services/project-controllers" element={<ProjectControllers />} />
